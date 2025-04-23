@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
 
 :root {
-    --preto-: #161615;
-    --alto-contraste-fundo:#000000;
-    --alto-contraste-texto:#ffffff;
-    --alto-contraste-link:#ffd700;
-
-
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -16,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #1a1919;
+    background-color: #ffffff;
 }
 
 
@@ -26,13 +23,13 @@ section {
 
 
 .nav-link {
-    color: #faf8f8;
+    color: #CB6D43;
     font-weight: 600;
 }
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/images.jpeg');
+    background-image: url('img/4965007.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -62,19 +59,17 @@ section {
 
 
 .botao-inicio {
-    background-color: var(--preto-);
+    background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height: 3em;
-    /* Convertido para em */
     align-content: center;
 
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--preto-);
+    text-shadow: -5px 5px var(--laranja-claro);
 }
 
 
@@ -83,8 +78,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/pngtree-a-beautiful-guitar-vector-or-color-illustration-png-image_2030580.jpg') top right no-repeat,
-        url('img/images\ \(1\).jpeg') bottom left no-repeat;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -103,7 +98,7 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: var(--preto-);
+    color: var(--laranja-claro);
 }
 
 #galeria {
@@ -112,12 +107,12 @@ h2 {
 }
 
 .fundo-galeria {
-    background: url('') bottom right no-repeat;
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/pexels-photo-3648850.webp');
+    background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -136,63 +131,69 @@ h2 {
 }
 
 .formulario button {
-    background-color: #363534;
+    background-color: #CB6D43;
     border: none;
     font-weight: bold;
 }
 
-/* chama classe do bootstrap para modificar a cor */
 .form-control {
     background-color: #F1EDEF;
-
 }
 .menu-acessibilidade{
     position: fixed;
-    top: 2rem;
-    right: 20px;
+    top:2rem;
+    right:20px;
     z-index: 1000;
 }
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
 }
-.opicoes-acessibilidade{
-    margin-top: 10px;
+
+.opcoes-acessibilidade{
+    margin-top:10px;
     display: flex;
     flex-direction: column;
 }
-.opicoes-acessibilidade{
+
+.opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
 .apresenta-lista{
     display: none;
-
 }
+
 .alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
+
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
+
 .alto-contraste .nav-link{
     color: var(--alto-contraste-link);
 }
+
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary{
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-fundo)
 }
-.alto-contraste #tropicalia{
+
+.alto-contraste #tropicalia {
     background: none;
 }
-.alto-contraste #galeria{
+
+.alto-contraste #galeria {
     background-color: var(--alto-contraste-fundo);
 }
-.alto-contraste .fundo-galeria{
+.alto-contraste .fundo-galeria {
     background: none;
 }
